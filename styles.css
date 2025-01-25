@@ -1,0 +1,97 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #FF7E5F, #FFB47B, #FFD27F); /* Warm sunset gradient */
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  /* Splash screen styles */
+  #splash-screen {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for overlay */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+  }
+  
+  /* Header and footer styles */
+  header, footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for overlay */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.5; /* Adjust line height for better spacing */
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for content */
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  
+  #waiters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Waiter card styles */
+  .waiter-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .waiter-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+  }
+  
+  .waiter-card h2 {
+    margin-top: 0;
+  }
+  
+  .waiter-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .waiter-card p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .waiter-card {
+      width: 100%;
+    }
+  }
+  
